@@ -33,12 +33,13 @@ let fullName = me.firstName + " " + me.lastName;
   - Console.log your last favorite food
 */
 console.log(me.favThreeFoods[0]);
-console.log(me.favThreeFoods[me.favThreeFoods.length - 1]);//Trying to figure out a way to find out how I can
-//pull the very last string in this array. I tried using
-//console.log(me.favThreeFoods.length-1); with a result of 2 instead of output eggs.
+console.log(me.favThreeFoods[me.favThreeFoods.length - 1]);
+//Trying to figure out a way to find out how I can pull the very last string in this array.
+//I tried using console.log(me.favThreeFoods.length-1); with a result of 2 instead of output eggs.
 // console.log('Last thing in favorite food list is: ${me.favThreeFoods -1} '); Testing
 //Figured it out. Instead of accessing 2 in the index I changed it to access the me const first,
-//then ojbect of favThreeFoods and then minus 1 from the length of favThreeFoods.
+//then ojbect of favThreeFoods and then minus 1 from the length of favThreeFoods. I am actually
+//super happy this part finally clicked for me.
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -51,7 +52,7 @@ console.log(me.favThreeFoods[me.favThreeFoods.length - 1]);//Trying to figure ou
 // //when I type shoeCount in console I get an error message that says shoeCount is not defined.
 // console.log('I own', me.shoeCount, 'pairs of shoes!');//1st attempt
 console.log(`I own ${me.shoeCount} pairs of shoes!`);
-me.shoeCount += 1;//I honestly don't remember what I did to make this work. 
+me.shoeCount += 1;//I honestly don't remember what I did to make this work.
 // console.log('Now I own', me.shoeCount, 'pairs of shoes.');
 console.log(`Now I own ${me.shoeCount} pairs of shoes.`);
 
